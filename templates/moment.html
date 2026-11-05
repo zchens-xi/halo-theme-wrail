@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-  th:replace="~{modules/layout :: html (title = '瞬间详情', content = ~{::content}, layout = 'page', breadcrumb = ~{::breadcrumb})}"
+  th:replace="~{modules/layout :: html (title = '碎碎念详情', content = ~{::content}, layout = 'page', breadcrumb = ~{::breadcrumb})}"
   xmlns:th="https://www.thymeleaf.org"
 >
   <th:block th:fragment="breadcrumb">
@@ -8,7 +8,7 @@
       <a href="/">[[#{breadcrumb.home}]]</a>
     </span>
     <span>
-      <a href="/moments">瞬间</a>
+      <a href="/moments">碎碎念</a>
     </span>
     <span>
       [[${moment.spec.releaseTime != null ? #dates.format(moment.spec.releaseTime,'yyyy-MM-dd HH:mm') : moment.metadata.name}]]
@@ -20,7 +20,7 @@
       <header class="mb-4" th:with="author=${moment.owner}, stats=${moment.stats}">
         <h1 class="h3 d-flex align-items-center gap-2 mb-3">
           <i class="fa fa-bolt text-warning"></i>
-          <span>瞬间</span>
+          <span>碎碎念</span>
         </h1>
         <div class="d-flex flex-wrap align-items-center gap-3 small text-muted">
           <span th:if="${moment.spec.releaseTime != null}">
@@ -125,7 +125,7 @@
       <footer class="mt-5 d-flex justify-content-between flex-wrap gap-3">
         <a class="btn btn-outline-secondary" href="/moments">
           <i class="fas fa-arrow-left me-2"></i>
-          返回瞬间列表
+          返回碎碎念列表
         </a>
         <span
           class="text-muted small"

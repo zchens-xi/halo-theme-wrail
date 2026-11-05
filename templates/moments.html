@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html
-  th:replace="~{modules/layout :: html (title = '瞬间', content = ~{::content}, layout = 'page', breadcrumb = ~{::breadcrumb})}"
+  th:replace="~{modules/layout :: html (title = '碎碎念', content = ~{::content}, layout = 'page', breadcrumb = ~{::breadcrumb})}"
   xmlns:th="https://www.thymeleaf.org"
 >
   <th:block th:fragment="breadcrumb">
     <span>
       <a href="/">[[#{breadcrumb.home}]]</a>
     </span>
-    <span>瞬间</span>
+    <span>碎碎念</span>
   </th:block>
 
   <div id="page-moments" class="ps-lg-2" th:fragment="content">
     <header class="moments-header mb-4">
       <h1 class="d-flex align-items-center gap-2 mb-0">
         <i class="fa fa-bolt text-warning"></i>
-        <span>瞬间</span>
+        <span>碎碎念</span>
       </h1>
     </header>
 

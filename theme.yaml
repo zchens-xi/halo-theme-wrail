@@ -18,5 +18,5 @@ spec:
   repo: https://github.com/ZH-CEN/halo-theme-wrail.git
   settingName: "halo-theme-wrail-setting"
   configMapName: "halo-theme-wrail-configMap"
-  version: 1.0.0
+  version: 1.1.0
   require: ">=2.0.0"
