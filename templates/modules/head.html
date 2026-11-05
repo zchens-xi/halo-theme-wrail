@@ -22,6 +22,18 @@
       name="viewport"
     />
 
+    <link rel="icon" href="/themes/halo-theme-wrail/assets/img/favicons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/halo-theme-wrail/assets/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/halo-theme-wrail/assets/img/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/halo-theme-wrail/assets/img/favicons/apple-touch-icon.png" />
+    <meta
+      name="description"
+      th:content="${#strings.isEmpty(site.subtitle) ? site.title : site.subtitle}"
+    />
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
+    <link rel="manifest" href="/themes/halo-theme-wrail/assets/img/favicons/site.webmanifest" />
+
     <title th:if="${#strings.isEmpty(title)}" th:text="${site.title}"></title>
     <title
       th:if="${!#strings.isEmpty(title)}"
