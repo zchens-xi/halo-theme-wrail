@@ -6,4 +6,5 @@ export function initSidebar() {
   modeWatcher();
   sidebarExpand();
   window.halo = halo;
+  halo.initAutoSync();
 }
